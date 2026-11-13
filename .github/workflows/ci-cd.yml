@@ -1,0 +1,54 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Репозиторийді жүктеу
+        uses: actions/checkout@v3
+
+      - name: Build қадамы
+        run: echo "Жоба сәтті жиналды"
+
+      - name: Тест қадамы
+        run: echo "Тесттер сәтті өтті"
+```[cite: 4]
+
+---
+
+### Шаг 3. Добавление CD (Этапа развертывания)
+Дополните файл `ci-cd.yml`, добавив второй шаг (`deploy`), который запускается только после успешного завершения этапа `build` (`needs: build`)[cite: 4]:
+
+```yaml
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Орналастыру
+        run: echo "Қосымша production ортасына орналастырылды"
+```[cite: 4]
+
+---
+
+### Шаг 4. Отправка изменений в репозиторий
+Сохраните файл и отправьте его на GitHub через терминал[cite: 4]:
+
+```bash
+git add .github/workflows/ci-cd.yml
+git commit -m "CI/CD Pipeline пен CD қадамы қосылды"
+git push origin master
+```[cite: 4]
+
+---
+
+### Шаг 5. Проверка работы Pipeline
+1. Перейдите на страницу вашего репозитория на GitHub[cite: 4].
+2. Откройте вкладку **Actions**[cite: 4].
+3. Убедитесь, что запущенный workflow успешно выполнил оба шага (`build` и `deploy`) и загорелся зеленым цветом[cite: 4]. Сделайте скриншот экрана в качестве подтверждения выполнения задания[cite: 4].
