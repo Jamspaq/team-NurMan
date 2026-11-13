@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная — Нурперзент & Мансур</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        header h1 {
+            font-size: 3rem;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #f59e0b, #ef4444);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        header p {
+            color: #94a3b8;
+            font-size: 1.2rem;
+        }
+        .cards-container {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 900px;
+            width: 100%;
+        }
+        .card {
+            background: rgba(30, 41, 59, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 40px 30px;
+            width: 380px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+            text-decoration: none;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .card.cs2:hover {
+            border-color: #f59e0b;
+            box-shadow: 0 15px 30px rgba(245, 158, 11, 0.2);
+        }
+        .card.ufc:hover {
+            border-color: #ef4444;
+            box-shadow: 0 15px 30px rgba(239, 68, 68, 0.2);
+        }
+        .badge {
+            display: inline-block;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+        .cs2 .badge {
+            background: rgba(245, 158, 11, 0.2);
+            color: #fbbf24;
+        }
+        .ufc .badge {
+            background: rgba(239, 68, 68, 0.2);
+            color: #f87171;
+        }
+        .card h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+        .card p {
+            color: #cbd5e1;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: opacity 0.2s;
+        }
+        .cs2 .btn {
+            background: #f59e0b;
+            color: #0f172a;
+        }
+        .ufc .btn {
+            background: #ef4444;
+            color: #ffffff;
+        }
+        .card:hover .btn {
+            opacity: 0.9;
+        }
+        footer {
+            margin-top: 60px;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>PORTAL HUB</h1>
+        <p>Выберите раздел, чтобы перейти на персональную страницу</p>
+    </header>
+
+    <div class="cards-container">
+        <!-- Карточка Нурперзента -->
+        <a href="nurperzent.html" class="card cs2">
+            <div>
+                <span class="badge">Counter-Strike 2</span>
+                <h2>Нурперзент</h2>
+                <p>Элитные агенты спецназа и террористов. Тактика, снаряжение и лучшие оперативники из мира CS2.</p>
+            </div>
+            <span class="btn">Перейти к агентам CS2 →</span>
+        </a>
+
+        <!-- Карточка Мансура -->
+        <a href="mansur.html" class="card ufc">
+            <div>
+                <span class="badge">UFC Octagon</span>
+                <h2>Мансур</h2>
+                <p>Легенды смешанных единоборств, чемпионы дивизионов и главные звёзды октагона UFC.</p>
+            </div>
+            <span class="btn">Перейти к бойцам UFC →</span>
+        </a>
+    </div>
+
+    <footer>
+        © 2026 Проект Нурперзента и Мансура
+    </footer>
+
+</body>
+</html>
