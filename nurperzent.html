@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Нурперзент — Агенты CS2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #111317;
+            color: #e2e8f0;
+            padding: 20px;
+        }
+        nav {
+            max-width: 1100px;
+            margin: 0 auto 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 25px;
+            background: #1c2026;
+            border-radius: 12px;
+            border-bottom: 2px solid #f59e0b;
+        }
+        nav a {
+            color: #f59e0b;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #fbbf24;
+        }
+        .header-section {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 50px;
+        }
+        .header-section h1 {
+            font-size: 2.8rem;
+            color: #f59e0b;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+        .header-section p {
+            color: #94a3b8;
+            font-size: 1.1rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .agent-card {
+            background: #1c2026;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid #2d333b;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+        .agent-card:hover {
+            transform: translateY(-5px);
+            border-color: #f59e0b;
+        }
+        .agent-banner {
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 900;
+            letter-spacing: 2px;
+        }
+        .ct-side {
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+            color: #dbeafe;
+        }
+        .t-side {
+            background: linear-gradient(135deg, #78350f, #d97706);
+            color: #fef3c7;
+        }
+        .agent-info {
+            padding: 20px;
+        }
+        .side-tag {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            padding: 3px 8px;
+            border-radius: 4px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        .tag-ct {
+            background: rgba(59, 130, 246, 0.2);
+            color: #60a5fa;
+        }
+        .tag-t {
+            background: rgba(245, 158, 11, 0.2);
+            color: #fbbf24;
+        }
+        .agent-info h3 {
+            font-size: 1.3rem;
+            margin-bottom: 8px;
+            color: #ffffff;
+        }
+        .agent-info p {
+            font-size: 0.95rem;
+            color: #94a3b8;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+        .weapon-pref {
+            font-size: 0.85rem;
+            color: #cbd5e1;
+            border-top: 1px solid #2d333b;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">← На главную</a>
+        <span>Раздел: <strong>Нурперзент</strong></span>
+        <a href="mansur.html">Сайт Мансура (UFC) →</a>
+    </nav>
+
+    <div class="header-section">
+        <h1>Агенты CS2 Нурперзента</h1>
+        <p>Подборка лучших оперативников спецназа и террористов из Counter-Strike 2</p>
+    </div>
+
+    <div class="grid">
+        <!-- Персонаж 1 -->
+        <div class="agent-card">
+            <div class="agent-banner ct-side">SAS</div>
+            <div class="agent-info">
+                <span class="side-tag tag-ct">Спецназ (CT)</span>
+                <h3>Офицер отряда B (SAS)</h3>
+                <p>Легендарный британский оперативник в противогазе. Мастер защиты точек и работы в дыму.</p>
+                <div class="weapon-pref"><strong>Любимое оружие:</strong> M4A1-S / AWP</div>
+            </div>
+        </div>
+
+        <!-- Персонаж 2 -->
+        <div class="agent-card">
+            <div class="agent-banner t-side">PHOENIX</div>
+            <div class="agent-info">
+                <span class="side-tag tag-t">Террористы (T)</span>
+                <h3>Солдат «Феникс»</h3>
+                <p>Классический боец в красной балаклаве. Специализируется на агрессивных прорывах и быстрых рашах.</p>
+                <div class="weapon-pref"><strong>Любимое оружие:</strong> AK-47 / Desert Eagle</div>
+            </div>
+        </div>
+
+        <!-- Персонаж 3 -->
+        <div class="agent-card">
+            <div class="agent-banner ct-side">FBI SWAT</div>
+            <div class="agent-info">
+                <span class="side-tag tag-ct">Спецназ (CT)</span>
+                <h3>Специальный агент Ава</h3>
+                <p>Одна из самых узнаваемых оперативниц ФБР. Высокая точность и хладнокровие в клатч-раундах.</p>
+                <div class="weapon-pref"><strong>Любимое оружие:</strong> USP-S / M4A4</div>
+            </div>
+        </div>
+
+        <!-- Персонаж 4 -->
+        <div class="agent-card">
+            <div class="agent-banner t-side">ELITE CREW</div>
+            <div class="agent-info">
+                <span class="side-tag tag-t">Террористы (T)</span>
+                <h3>Профессор Шахмат</h3>
+                <p>Тактик из элитного подразделения. Знает все раскидки гранат и тайминги на карте Mirage и Dust 2.</p>
+                <div class="weapon-pref"><strong>Любимое оружие:</strong> Galil AR / AWP</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
