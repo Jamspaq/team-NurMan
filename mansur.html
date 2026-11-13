@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мансур — Бойцы UFC</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #0d0d0d;
+            color: #f1f5f9;
+            padding: 20px;
+        }
+        nav {
+            max-width: 1100px;
+            margin: 0 auto 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 25px;
+            background: #1a1a1a;
+            border-radius: 12px;
+            border-bottom: 2px solid #dc2626;
+        }
+        nav a {
+            color: #ef4444;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #f87171;
+        }
+        .header-section {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 50px;
+        }
+        .header-section h1 {
+            font-size: 2.8rem;
+            color: #dc2626;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+        .header-section p {
+            color: #9ca3af;
+            font-size: 1.1rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .fighter-card {
+            background: #1a1a1a;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid #2e2e2e;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+        .fighter-card:hover {
+            transform: translateY(-5px);
+            border-color: #dc2626;
+        }
+        .fighter-banner {
+            height: 110px;
+            background: linear-gradient(135deg, #7f1d1d, #dc2626);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        .fighter-banner .nickname {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            opacity: 0.85;
+        }
+        .fighter-banner .record {
+            font-size: 1.6rem;
+            font-weight: 900;
+            margin-top: 4px;
+        }
+        .fighter-info {
+            padding: 20px;
+        }
+        .division-tag {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            padding: 4px 8px;
+            border-radius: 4px;
+            background: rgba(220, 38, 38, 0.2);
+            color: #f87171;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        .fighter-info h3 {
+            font-size: 1.35rem;
+            margin-bottom: 8px;
+            color: #ffffff;
+        }
+        .fighter-info p {
+            font-size: 0.95rem;
+            color: #9ca3af;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+        .style-info {
+            font-size: 0.85rem;
+            color: #e5e7eb;
+            border-top: 1px solid #2e2e2e;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">← На главную</a>
+        <span>Раздел: <strong>Мансур</strong></span>
+        <a href="nurperzent.html">Сайт Нурперзента (CS2) →</a>
+    </nav>
+
+    <div class="header-section">
+        <h1>Бойцы UFC Мансура</h1>
+        <p>Самые зрелищные и доминирующие бойцы в истории октагона</p>
+    </div>
+
+    <div class="grid">
+        <!-- Боец 1 -->
+        <div class="fighter-card">
+            <div class="fighter-banner">
+                <span class="nickname">"The Eagle"</span>
+                <span class="record">29 - 0 - 0</span>
+            </div>
+            <div class="fighter-info">
+                <span class="division-tag">Лёгкий вес</span>
+                <h3>Хабиб Нурмагомедов</h3>
+                <p>Непобеждённый чемпион UFC. Абсолютное доминирование в партере, железный контроль и выносливость.</p>
+                <div class="style-info"><strong>Стиль:</strong> Боевое самбо, борьба</div>
+            </div>
+        </div>
+
+        <!-- Боец 2 -->
+        <div class="fighter-card">
+            <div class="fighter-banner">
+                <span class="nickname">"Poatan"</span>
+                <span class="record">Чемпион</span>
+            </div>
+            <div class="fighter-info">
+                <span class="division-tag">Полутяжёлый вес</span>
+                <h3>Алекс Перейра</h3>
+                <p>Обладатель сокрушительного левого хука. Бывший чемпион Glory в двух весовых категориях и звезда UFC.</p>
+                <div class="style-info"><strong>Стиль:</strong> Кикбоксинг</div>
+            </div>
+        </div>
+
+        <!-- Боец 3 -->
+        <div class="fighter-card">
+            <div class="fighter-banner">
+                <span class="nickname">"Nomad"</span>
+                <span class="record">18 - 0 - 0</span>
+            </div>
+            <div class="fighter-info">
+                <span class="division-tag">Полусредний вес</span>
+                <h3>Шавкат Рахмонов</h3>
+                <p>100% досрочных побед. Универсальный финишер, одинаково опасный как в стойке, так и в грэпплинге.</p>
+                <div class="style-info"><strong>Стиль:</strong> Универсал (ММА)</div>
+            </div>
+        </div>
+
+        <!-- Боец 4 -->
+        <div class="fighter-card">
+            <div class="fighter-banner">
+                <span class="nickname">"Bones"</span>
+                <span class="record">27 - 1 - 0</span>
+            </div>
+            <div class="fighter-info">
+                <span class="division-tag">Тяжёлый вес</span>
+                <h3>Джон Джонс</h3>
+                <p>Самый молодой чемпион в истории UFC и легенда P4P. Непредсказуемая ударная техника и высочайший бойцовский IQ.</p>
+                <div class="style-info"><strong>Стиль:</strong> Вольная борьба, муай-тай</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
